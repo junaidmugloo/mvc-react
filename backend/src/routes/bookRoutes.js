@@ -7,6 +7,8 @@ router.get('/books', bookController.getAllBooks);
 
 //Home Routing 
 router.get('/', homeController.indexFunction);
+router.get('/about', homeController.aboutFunction);
+
 
 // Implement other routes (GET /books/:id, PUT /books/:id, DELETE /books/:id) here...
 

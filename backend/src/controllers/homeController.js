@@ -7,3 +7,10 @@ exports.indexFunction = async (req, res) => {
   }
 };
 
+exports.aboutFunction = async (req, res) => {
+  try {
+    res.render('about'); 
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};

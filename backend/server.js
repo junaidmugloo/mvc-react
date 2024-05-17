@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const bookRoutes = require('./routes/bookRoutes');
-const routLink=require("./routes/bookRoutes")//import router
+const routLink=require("./src/routes/bookRoutes")//import router
 const cors = require("cors");
 
 
@@ -14,7 +13,9 @@ const app = express();
 const port = 3000;
 
 app.set('view engine', 'ejs'); // Set EJS as templating engine 
-app.set('views');//set views folder for html
+app.set('views',__dirname+'\\src\\views'); //set views folder for html
+app.use(express.static(__dirname + '/public'));
+
 app.use(cors(corsOptions));//allow cors Origen 
 
 
