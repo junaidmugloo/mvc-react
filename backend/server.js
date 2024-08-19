@@ -24,6 +24,11 @@ mongoose.connect('mongodb://localhost:27017/mydb', {
   useUnifiedTopology: true,
 }); //mongo db connection
 
+var conn = mongoose.connection;
+conn.on('connected', function() {
+    console.log('database is connected successfully');
+});
+
 app.use(express.json());
 app.use('/', routLink); //router prefix
 
