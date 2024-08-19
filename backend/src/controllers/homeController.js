@@ -1,6 +1,5 @@
 const User = require('../models/user');
 
-
 exports.createUser = async (req, res) => {
   try {
     const user = new User(req.body);
@@ -29,15 +28,44 @@ exports.getAllUser = async (req, res) => {
 
 exports.indexFunction = async (req, res) => {
   try {
-    res.render('index'); 
+    res.render('index');
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
 };
 
-exports.aboutFunction = async (req, res) => {
+
+exports.categoryFunction = async (req, res) => {
   try {
-    res.render('about'); 
+    res.render('category');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.subcategoryFunction = async (req, res) => {
+  try {
+    res.render('subcategory');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.productattributeFunction = async (req, res) => {
+  try {
+    res.render('productattribute');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.editattributeFunction = async (req, res) => {
+  try {
+    res.render('editattribute');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.productlistFunction = async (req, res) => {
+  try {
+    res.render('productlist');
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -45,7 +73,7 @@ exports.aboutFunction = async (req, res) => {
 
 exports.loginFunction = async (req, res) => {
   try {
-    res.render('login'); 
+    res.render('login');
   } catch (error) {
     res.status(500).json({ error: error.message });
   }

@@ -1,0 +1,444 @@
+<!-- Fontsawesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<aside class="left-sidebar " id="left-sidebar">
+    <div id="sidebar" class="sidebar sidebar-with-footer">
+        <!-- Aplication Brand -->
+        <div class="app-brand">
+            <a href="/index.html">
+                <img src="assets/images/logo.png" alt="Mono">
+                <span class="brand-name">KASHTECH</span>
+            </a>
+        </div>
+        <!-- begin sidebar scrollbar -->
+        <style>
+            .fa-solid,
+            .bx {
+                font-size: 16px !important;
+                max-width: 100%;
+            }
+        </style>
+        <div class="sidebar-left" data-simplebar style="height: 100%;">
+            <!-- sidebar menu -->
+            <ul class="nav sidebar-inner " id="sidebar-menu">
+                <li class="active">
+                    <a class="sidenav-item-link" href="/">
+                        <i class="fa-solid fa-house house"></i>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#POS"
+                        aria-expanded="false" aria-controls="POS">
+                        <i class="fa-solid fa-lock"></i>
+                        <span class="nav-text">POS</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse" id="POS" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text text-capitalise">new sale</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">Orders</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="section-title ">
+                    ORDER MANAGEMENT
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-basket-shopping"></i>
+                        <span class="nav-text">Verify Offline Payment</span>
+                    </a>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#orders"
+                        aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="nav-text">Orders</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="orders" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text">All</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">Pending</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Confirmed</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Packaging</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Out For Delivery</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Delivered</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Returned</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Failed</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Cancel</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="section-title ">
+                    PRODUCT MANAGEMENT
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                        data-target="#category" aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span class="nav-text">Category Setup</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="category" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="/category">
+                                    <span class="nav-text">Categories</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="/subcategory">
+                                    <span class="nav-text">Sub Categories</span>
+                                </a>
+                            </li>
+
+                        </div>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#product"
+                        aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-gem"></i>
+                        <span class="nav-text">Product Setup</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="product" data-parent="#sidebar-menu" type="disc">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="/productattribute">
+                                    <span class="nav-text">Product Attribute</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">Product List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Bulk Import</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Bulk Export</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    Limited Stocks
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="section-title ">
+                    PROMOTION MANAGEMENT
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                        <span class="nav-text">Banner</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-gift"></i>
+                        <span class="nav-text">Coupons</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-bell"></i>
+                        <span class="nav-text">Send Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <span class="nav-text">Flash Sale</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-copy"></i>
+                        <span class="nav-text">Category Discount</span>
+                    </a>
+                </li>
+                <li class="section-title ">
+                    HELP & SUPPORT SECTION
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span class="nav-text">Messages</span>
+                    </a>
+                </li>
+                <li class="section-title ">
+                    Report And Analytics
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class='bx bx-bar-chart-alt'></i>
+                        <span class="nav-text">Sales Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span class="nav-text">Order Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class='bx bxs-bar-chart-alt-2'></i>
+                        <span class="nav-text">Expense Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-chart-pie"></i>
+                        <span class="nav-text">Earning Report</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class='bx bxs-doughnut-chart'></i>
+                        <span class="nav-text">Analytics</span>
+                    </a>
+                </li>
+                <li class="section-title ">
+                    USER MANAGEMENT
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-address-book"></i>
+                        <span class="nav-text">Customer List</span>
+                    </a>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#wallet"
+                        aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-wallet"></i>
+                        <span class="nav-text">Customer Wallet</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="wallet" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text">Add Fund</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">Report</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Wallet Bonus Setup</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#loyalty"
+                        aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-award"></i>
+                        <span class="nav-text">Customer loyalty Point</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="loyalty" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text">Report</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-star"></i>
+                        <span class="nav-text">Product Reviews</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-square-envelope"></i>
+                        <span class="nav-text">Subscribed Emails</span>
+                    </a>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                        data-target="#delivery" aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-user"></i>
+                        <span class="nav-text">Delivery Man</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="delivery" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text">Delivery Man List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">Add New Delivery Man</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">New Joining Request</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Delivery Man Reviews</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
+                        data-target="#employee" aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-dolly"></i>
+                        <span class="nav-text">Employees</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="employee" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text">Employee Role Setup</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">Employee List</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-compose.html">
+                                    <span class="nav-text">Add New Employee</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="section-title ">
+                    SYSTEM SETTING
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span class="nav-text">Business Setup</span>
+                    </a>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#branch"
+                        aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-shop"></i>
+                        <span class="nav-text">Branch Setup</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="branch" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text">Add New</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">List</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="has-sub">
+                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse" data-target="#wallet"
+                        aria-expanded="false" aria-controls="email">
+                        <i class="fa-solid fa-map"></i>
+                        <span class="nav-text">Pages & Media</span> <b class="caret"></b>
+                    </a>
+                    <ul class="collapse " id="wallet" data-parent="#sidebar-menu">
+                        <div class="sub-menu">
+                            <li>
+                                <a class="sidenav-item-link" href="email-inbox.html">
+                                    <span class="nav-text">Page Setup</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="email-details.html">
+                                    <span class="nav-text">Social Media</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-shield"></i>
+                        <span class="nav-text">System Setup</span>
+                    </a>
+                </li>
+                <li class="section-title ">
+                    SYSTEM ADDON
+                </li>
+                <li>
+                    <a class="sidenav-item-link" href="">
+                        <i class="fa-solid fa-circle-plus"></i>
+                        <span class="nav-text">System Addons</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</aside>
