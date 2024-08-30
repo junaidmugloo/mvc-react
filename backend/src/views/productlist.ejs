@@ -137,6 +137,7 @@
                             border-radius: 20px !important;
                             padding: 20px;
                             margin: 10px;
+                            width: fit-content !important;
                         }
 
                         .btn--container {
@@ -149,36 +150,38 @@
                         .btn--primary {
                             background-color: #0B5E65;
                             color: white;
-                            padding: 10px 20px;
+                            padding: 9px 20px;
                             border: none;
                             border-radius: 5px;
                             cursor: pointer;
                         }
 
-                        .btn--reset {
-                            background-color: #DCDCDE;
-                            color: #000;
-                            padding: 10px 20px;
-                            border: 1px solid #ced4da;
-                            border-radius: 5px;
-                            cursor: pointer;
+                        .add:hover {
+                            background-color: #0B5E65;
+                            color: rgb(214, 209, 209);
                         }
 
-                        .img--50 {
-                            width: 50px;
-                            height: 50px;
+                        
+                        .img--40 {
+                            width: 40px;
+                            height: 40px;
                             object-fit: cover;
                         }
 
                         .max-85 {
                             max-width: 85px;
                         }
-                        .fa-download{
+
+                        .fa-download {
                             font-size: 13px !important;
                         }
+
+                        .fw-bold {
+                            font-weight: bolder !important;
+                        }
                     </style>
-                    <div class="content-wrapper p-5  border border-0 ">
-                        <div class="border border-0">
+                    <div class="content-wrapper p-5  ">
+                        <div>
                             <div>
                                 <img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/products.png"
                                     alt="camera">
@@ -187,9 +190,8 @@
                                 <!-- <a href="#" class="link-underline-primary text-dark">English -->
                             </div>
                             <div class=" border border-1 form ">
-
-                                <form action="" method="get" class="row d-flex  mb-2 justify-content-between">
-                                    <div class="d-flex col-5 ">
+                                <div class=" row d-flex  mb-2 justify-content-between">
+                                    <form class="d-flex col-6 mb-2">
 
                                         <input type="search" name="searchcategory" placeholder="Search" required
                                             class="form-control rounded-start px-4 py-2  border" aria-label="Search"
@@ -197,47 +199,84 @@
                                         <button type="submit" class="rounded-end  px-4 py-2  btn--primary  ">
                                             <i class="fa-solid fa-magnifying-glass"></i>
                                         </button>
-                                    </div>
-                                    <div class="d-flex col-5">
+
+                                        <input type="hidden" name="_token"
+                                            value="2tvumO54sfGx6nXptASOz8g8fz7rBHr5dGiyyu0A" autocomplete="off">
+                                    </form>
+                                    <div class="d-flex  justify-content-around col-6">
                                         <div class="dropdown d-inline-block mb-1">
-                                        <button class="btn btn-outline-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                          aria-haspopup="true" aria-expanded="false" data-display="static">
-                                          <i class="fa-solid fa-download"></i>&nbsp;Export
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                          <a class="dropdown-item" href="#">Action</a>
-                                          <a class="dropdown-item" href="#">Another action</a>
-                                          <a class="dropdown-item" href="#">Something else here</a>
+                                            <button class="btn btn-outline-info dropdown-toggle" tpe="button"
+                                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false" data-display="static">
+                                                <i class="fa-solid fa-download"></i>&nbsp;Export
+                                            </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
                                         </div>
-                                      </div>
+                                        <div>
+                                            <a href="/limitedstock" role="button"
+                                                class="btn btn-info">Limited&nbsp;Stock</a>
+                                        </div>
+                                        <div>
+                                            <a class="btn--primary btn add" href="/addnewproduct" role="button">
+
+                                                &nbsp;+&nbsp;Add&nbsp;New&nbsp;Product
+                                            </a>
+
+                                        </div>
                                     </div>
 
-                                    <input type="hidden" name="_token" value="2tvumO54sfGx6nXptASOz8g8fz7rBHr5dGiyyu0A"
-                                        autocomplete="off">
-                                </form>
+                                </div>
                                 <table
                                     class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table">
-                                    <thead class="thead-light">
+                                    <thead class="thead-light ">
                                         <tr>
-                                            <th class="text-center">SL</th>
-                                            <th>Category image</th>
-                                            <th>Name</th>
-                                            <th>Status</th>
-                                            <th>Priority</th>
-                                            <th class="text-center">Action</th>
+                                            <th class="text-center fw-bold "><small>SL</small></th>
+                                            <th class="fw-bold  "><small>Product&nbsp;Name</small></th>
+                                            <th class="fw-bold  "><small>Selling&nbsp;Price</small></th>
+                                            <th class="fw-bold  "><small>Total&nbsp;Sale</small></th>
+                                            <th class="fw-bold  "><small>Show&nbsp;in&nbsp;Daily&nbsp;Needs</small></th>
+                                            <th class="fw-bold  "><small>Featured</small></th>
+                                            <th class="fw-bold  "><small>Status</small></th>
+                                            <th class="text-center fw-bold  "><small>Action</small></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td class="text-center">1</td>
-                                            <td>
-                                                <img src="https://grofresh-admin.6amtech.com/storage/app/public/category/2023-03-25-641e78b045dad.png"
-                                                    class="img--50 ml-3" alt="Category">
+                                            <td class="d-flex ">
+                                                <img src="https://grofresh-admin.6amtech.com/storage/app/public/product/2023-10-21-65335b64e8ee5.png"
+                                                    class="img--40 ml-3" alt="Category">
+                                                <small>Premium&nbsp;Quality Body...</small>
                                             </td>
                                             <td>
                                                 <span class="d-block font-size-sm text-body text-trim-50">
-                                                    Fruits and Vegetables
+                                                    470.00$
                                                 </span>
+                                            </td>
+                                            <td>
+                                                <span class="d-block font-size-sm text-body text-trim-50">
+                                                    2
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input" type="checkbox" role="switch"
+                                                        id="flexSwitchCheckChecked" />
+
+                                                </div>
+
+                                            </td>
+                                            <td>
+                                                <div class="form-check form-switch">
+                                                    <input class="form-check-input bg-body-secondary" type="checkbox"
+                                                        role="switch" id="flexSwitchCheckChecked" />
+
+                                                </div>
+
                                             </td>
                                             <td>
                                                 <div class="form-check form-switch">
@@ -247,22 +286,7 @@
                                                 </div>
 
                                             </td>
-                                            <td>
-                                                <div class="max-85">
-                                                    <select name="priority" class="custom-select">
-                                                        <option value="1" selected="">1</option>
-                                                        <option value="2">2</option>
-                                                        <option value="3">3</option>
-                                                        <option value="4">4</option>
-                                                        <option value="5">5</option>
-                                                        <option value="6">6</option>
-                                                        <option value="7">7</option>
-                                                        <option value="8">8</option>
-                                                        <option value="9">9</option>
-                                                        <option value="10">10</option>
-                                                    </select>
-                                                </div>
-                                            </td>
+
                                             <td>
                                                 <div class="btn--container justify-content-center">
                                                     <a class="action-btn" href="">
@@ -272,14 +296,7 @@
                                                         <i class="fa-solid fa-trash"></i>
                                                     </a>
                                                 </div>
-                                                <form
-                                                    action="https://grofresh-admin.6amtech.com/admin/category/delete/1"
-                                                    method="post" id="category-1">
-                                                    <input type="hidden" name="_token"
-                                                        value="1tvumO54sfGx6nXptASOz8g8fz7rBHr5dGiyyu0A"
-                                                        autocomplete="off"> <input type="hidden" name="_method"
-                                                        value="delete">
-                                                </form>
+
                                             </td>
                                         </tr>
                                     </tbody>
@@ -293,6 +310,7 @@
 
                     </div>
             </div>
+
 
 
 

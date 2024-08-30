@@ -70,7 +70,41 @@ exports.productlistFunction = async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 };
-
+exports.limitedstockFunction = async (req, res) => {
+  try {
+    res.render('limitedstock');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.addnewproductFunction = async (req, res) => {
+  try {
+    res.render('addnewproduct');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.bulkimportFunction = async (req, res) => {
+  try {
+    res.render('bulkimport');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.bulkexportFunction = async (req, res) => {
+  try {
+    res.render('bulkexport');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+exports.messageFunction = async (req, res) => {
+  try {
+    res.render('message');
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
 exports.loginFunction = async (req, res) => {
   try {
     res.render('login');
