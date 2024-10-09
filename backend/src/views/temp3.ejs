@@ -1,0 +1,1874 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="csrf-token" content="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Customer List</title>
+    <link rel="icon" type="image/x-icon" href="https://grofresh-admin.6amtech.com/storage/app/public/restaurant/2023-11-21-655c75526b81b.png">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/css/vendor.min.css">
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/css/owl.min.css">
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/css/theme.minc619.css?v=1.0">
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/css/style.css">
+    <meta name="csrf-token" content="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T">
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/css/toastr.css">
+    <link rel="stylesheet" href="https://grofresh-admin.6amtech.com/public/assets/admin/css/custom-helper.css">
+    <style>@-webkit-keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@keyframes swal2-show{0%{-webkit-transform:scale(.7);transform:scale(.7)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}100%{-webkit-transform:scale(1);transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{-webkit-transform:scale(1);transform:scale(1);opacity:1}100%{-webkit-transform:scale(.5);transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.875em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}100%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}50%{margin-top:1.625em;-webkit-transform:scale(.4);transform:scale(.4);opacity:0}80%{margin-top:-.375em;-webkit-transform:scale(1.15);transform:scale(1.15)}100%{margin-top:0;-webkit-transform:scale(1);transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}100%{-webkit-transform:rotateX(0);transform:rotateX(0);opacity:1}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-shown{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;box-shadow:0 0 .625em #d9d9d9;overflow-y:hidden}.swal2-popup.swal2-toast .swal2-header{flex-direction:row}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:initial;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon-text{font-size:2em;font-weight:700;line-height:1em}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{height:auto;margin:0 .3125em}.swal2-popup.swal2-toast .swal2-styled{margin:0 .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 .0625em #fff,0 0 0 .125em rgba(50,100,150,.4)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:2em;height:2.8125em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.25em;left:-.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:2em 2em;transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;-webkit-transform-origin:0 2em;transform-origin:0 2em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:showSweetToast .5s;animation:showSweetToast .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:hideSweetToast .2s forwards;animation:hideSweetToast .2s forwards}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:animate-toast-success-tip .75s;animation:animate-toast-success-tip .75s}.swal2-popup.swal2-toast .swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:animate-toast-success-long .75s;animation:animate-toast-success-long .75s}@-webkit-keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@keyframes showSweetToast{0%{-webkit-transform:translateY(-.625em) rotateZ(2deg);transform:translateY(-.625em) rotateZ(2deg);opacity:0}33%{-webkit-transform:translateY(0) rotateZ(-2deg);transform:translateY(0) rotateZ(-2deg);opacity:.5}66%{-webkit-transform:translateY(.3125em) rotateZ(2deg);transform:translateY(.3125em) rotateZ(2deg);opacity:.7}100%{-webkit-transform:translateY(0) rotateZ(0);transform:translateY(0) rotateZ(0);opacity:1}}@-webkit-keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@keyframes hideSweetToast{0%{opacity:1}33%{opacity:.5}100%{-webkit-transform:rotateZ(1deg);transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes animate-toast-success-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes animate-toast-success-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-shown{top:auto;right:auto;bottom:auto;left:auto;background-color:transparent}body.swal2-no-backdrop .swal2-shown>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-shown.swal2-top{top:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-top-left,body.swal2-no-backdrop .swal2-shown.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-top-end,body.swal2-no-backdrop .swal2-shown.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-shown.swal2-center{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-left,body.swal2-no-backdrop .swal2-shown.swal2-center-start{top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-center-end,body.swal2-no-backdrop .swal2-shown.swal2-center-right{top:50%;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom{bottom:0;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}body.swal2-no-backdrop .swal2-shown.swal2-bottom-left,body.swal2-no-backdrop .swal2-shown.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-shown.swal2-bottom-end,body.swal2-no-backdrop .swal2-shown.swal2-bottom-right{right:0;bottom:0}.swal2-container{display:flex;position:fixed;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:10px;background-color:transparent;z-index:1060;overflow-x:hidden;-webkit-overflow-scrolling:touch}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-container.swal2-fade{transition:background-color .1s}.swal2-container.swal2-shown{background-color:rgba(0,0,0,.4)}.swal2-popup{display:none;position:relative;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border-radius:.3125em;background:#fff;font-family:inherit;font-size:1rem;box-sizing:border-box}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-popup .swal2-header{display:flex;flex-direction:column;align-items:center}.swal2-popup .swal2-title{display:block;position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-popup .swal2-actions{flex-wrap:wrap;align-items:center;justify-content:center;margin:1.25em auto 0;z-index:1}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-popup .swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-confirm{width:2.5em;height:2.5em;margin:.46875em;padding:0;border:.25em solid transparent;border-radius:100%;border-color:transparent;background-color:transparent!important;color:transparent;cursor:default;box-sizing:border-box;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-popup .swal2-actions.swal2-loading .swal2-styled.swal2-cancel{margin-right:30px;margin-left:30px}.swal2-popup .swal2-actions.swal2-loading :not(.swal2-styled).swal2-confirm::after{display:inline-block;width:15px;height:15px;margin-left:5px;border:3px solid #999;border-radius:50%;border-right-color:transparent;box-shadow:1px 1px 1px #fff;content:'';-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal}.swal2-popup .swal2-styled{margin:.3125em;padding:.625em 2em;font-weight:500;box-shadow:none}.swal2-popup .swal2-styled:not([disabled]){cursor:pointer}.swal2-popup .swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#3085d6;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#aaa;color:#fff;font-size:1.0625em}.swal2-popup .swal2-styled:focus{outline:0;box-shadow:0 0 0 2px #fff,0 0 0 4px rgba(50,100,150,.4)}.swal2-popup .swal2-styled::-moz-focus-inner{border:0}.swal2-popup .swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-popup .swal2-image{max-width:100%;margin:1.25em auto}.swal2-popup .swal2-close{position:absolute;top:0;right:0;justify-content:center;width:1.2em;height:1.2em;padding:0;transition:color .1s ease-out;border:none;border-radius:0;outline:initial;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer;overflow:hidden}.swal2-popup .swal2-close:hover{-webkit-transform:none;transform:none;color:#f27474}.swal2-popup>.swal2-checkbox,.swal2-popup>.swal2-file,.swal2-popup>.swal2-input,.swal2-popup>.swal2-radio,.swal2-popup>.swal2-select,.swal2-popup>.swal2-textarea{display:none}.swal2-popup .swal2-content{justify-content:center;margin:0;padding:0;color:#545454;font-size:1.125em;font-weight:300;line-height:normal;z-index:1;word-wrap:break-word}.swal2-popup #swal2-content{text-align:center}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-radio,.swal2-popup .swal2-select,.swal2-popup .swal2-textarea{margin:1em auto}.swal2-popup .swal2-file,.swal2-popup .swal2-input,.swal2-popup .swal2-textarea{width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;font-size:1.125em;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);box-sizing:border-box}.swal2-popup .swal2-file.swal2-inputerror,.swal2-popup .swal2-input.swal2-inputerror,.swal2-popup .swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-popup .swal2-file:focus,.swal2-popup .swal2-input:focus,.swal2-popup .swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 3px #c4e6f5}.swal2-popup .swal2-file::-webkit-input-placeholder,.swal2-popup .swal2-input::-webkit-input-placeholder,.swal2-popup .swal2-textarea::-webkit-input-placeholder{color:#ccc}.swal2-popup .swal2-file:-ms-input-placeholder,.swal2-popup .swal2-input:-ms-input-placeholder,.swal2-popup .swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::-ms-input-placeholder,.swal2-popup .swal2-input::-ms-input-placeholder,.swal2-popup .swal2-textarea::-ms-input-placeholder{color:#ccc}.swal2-popup .swal2-file::placeholder,.swal2-popup .swal2-input::placeholder,.swal2-popup .swal2-textarea::placeholder{color:#ccc}.swal2-popup .swal2-range input{width:80%}.swal2-popup .swal2-range output{width:20%;font-weight:600;text-align:center}.swal2-popup .swal2-range input,.swal2-popup .swal2-range output{height:2.625em;margin:1em auto;padding:0;font-size:1.125em;line-height:2.625em}.swal2-popup .swal2-input{height:2.625em;padding:0 .75em}.swal2-popup .swal2-input[type=number]{max-width:10em}.swal2-popup .swal2-file{font-size:1.125em}.swal2-popup .swal2-textarea{height:6.75em;padding:.75em}.swal2-popup .swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;color:#545454;font-size:1.125em}.swal2-popup .swal2-checkbox,.swal2-popup .swal2-radio{align-items:center;justify-content:center}.swal2-popup .swal2-checkbox label,.swal2-popup .swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-popup .swal2-checkbox input,.swal2-popup .swal2-radio input{margin:0 .4em}.swal2-popup .swal2-validation-message{display:none;align-items:center;justify-content:center;padding:.625em;background:#f0f0f0;color:#666;font-size:1em;font-weight:300;overflow:hidden}.swal2-popup .swal2-validation-message::before{display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center;content:'!';zoom:normal}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-moz-document url-prefix(){.swal2-close:focus{outline:2px solid rgba(50,100,150,.4)}}.swal2-icon{position:relative;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;line-height:5em;cursor:default;box-sizing:content-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;zoom:normal}.swal2-icon-text{font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;-webkit-transform:rotate(45deg);transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:3.75em 3.75em;transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 3.75em;transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;top:-.25em;left:-.25em;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%;z-index:2;box-sizing:content-box}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;top:.5em;left:1.625em;width:.4375em;height:5.625em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);z-index:1}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;height:.3125em;border-radius:.125em;background-color:#a5dc86;z-index:2}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.875em;width:1.5625em;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal2-progresssteps{align-items:center;margin:0 0 1.25em;padding:0;font-weight:600}.swal2-progresssteps li{display:inline-block;position:relative}.swal2-progresssteps .swal2-progresscircle{width:2em;height:2em;border-radius:2em;background:#3085d6;color:#fff;line-height:2em;text-align:center;z-index:20}.swal2-progresssteps .swal2-progresscircle:first-child{margin-left:0}.swal2-progresssteps .swal2-progresscircle:last-child{margin-right:0}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep{background:#3085d6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progresscircle{background:#add8e6}.swal2-progresssteps .swal2-progresscircle.swal2-activeprogressstep~.swal2-progressline{background:#add8e6}.swal2-progresssteps .swal2-progressline{width:2.5em;height:.4em;margin:0 -1px;background:#3085d6;z-index:10}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-show.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-hide.swal2-noanimation{-webkit-animation:none;animation:none}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-animate-success-icon .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-animate-success-icon .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-animate-success-icon .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-animate-error-icon{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-animate-error-icon .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}@-webkit-keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:initial!important}}</style></head>
+    <body class="footer-offset footer-offset has-navbar-vertical-aside navbar-vertical-aside-show-xl" id="demo">
+    <header id="header" class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+    <div class="navbar-nav-wrap">
+    <div class="navbar-nav-wrap-content-left d-xl-none">
+    <button type="button" class="js-navbar-vertical-aside-toggle-invoker close mr-3">
+    <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="" data-original-title="Collapse"></i>
+    <i class="tio-last-page navbar-vertical-aside-toggle-full-align" data-template="<div class=&quot;tooltip d-none d-sm-block&quot; role=&quot;tooltip&quot;><div class=&quot;arrow&quot;></div><div class=&quot;tooltip-inner&quot;></div></div>" data-toggle="tooltip" data-placement="right" title="" data-original-title="Expand"></i>
+    </button>
+    </div>
+    <div class="navbar-nav-wrap-content-right">
+    <ul class="navbar-nav align-items-center flex-row">
+    <li class="nav-item mr-0">
+    <div class="hs-unfold">
+    <div class="p-2">
+    <div class="topbar-text dropdown disable-autohide text-capitalize">
+    <a class="topbar-link dropdown-toggle lang-country-flag" href="#" data-toggle="dropdown">
+    <img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/google_translate_logo.png" alt=""> <span>en</span>
+    </a>
+    <ul class="dropdown-menu absolute">
+    <li>
+    <a class="dropdown-item pb-1 lang-country-flag" href="https://grofresh-admin.6amtech.com/admin/lang/en">
+    <span>English</span>
+    </a>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </li>
+    <li class="nav-item d-none d-sm-inline-block">
+    <div class="hs-unfold">
+    <a class="js-hs-unfold-invoker btn btn-icon notify--icon" href="https://grofresh-admin.6amtech.com/admin/message/list" data-hs-unfold-invoker="">
+    <i class="tio-messages-outlined"></i>
+    <span class="amount">
+    0
+    </span>
+    </a>
+    </div>
+    </li>
+    <li class="nav-item">
+    <div class="hs-unfold">
+    <a class="js-hs-unfold-invoker btn btn-icon notify--icon" href="https://grofresh-admin.6amtech.com/admin/orders/list/pending" data-hs-unfold-invoker="">
+    <i class="tio-shopping-cart-outlined"></i>
+    <span class="amount">
+    0
+    </span>
+    </a>
+    </div>
+    </li>
+    <li class="nav-item ml-4">
+    <div class="hs-unfold">
+    <a class="js-hs-unfold-invoker navbar-dropdown-account-wrapper" href="javascript:;" data-hs-unfold-options="{
+                                         &quot;target&quot;: &quot;#accountNavbarDropdown&quot;,
+                                         &quot;type&quot;: &quot;css-animation&quot;
+                                       }" data-hs-unfold-target="#accountNavbarDropdown" data-hs-unfold-invoker="">
+    <div class="cmn--media right-dropdown-icon d-flex align-items-center">
+    <div class="media-body pl-0 pr-2">
+    <span class="card-title h5 text-right">
+    Jhon
+    Doe
+    </span>
+    <span class="card-text">Master Admin</span>
+    </div>
+    <div class="avatar avatar-sm avatar-circle">
+    <img class="avatar-img" src="https://grofresh-admin.6amtech.com/storage/app/public/admin/2023-10-21-65335c1bd07bd.png" alt="Logo">
+    <span class="avatar-status avatar-sm-status avatar-status-success"></span>
+    </div>
+    </div>
+    </a>
+    <div id="accountNavbarDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu navbar-dropdown-account w-16rem hs-unfold-hidden hs-unfold-content-initialized hs-unfold-css-animation animated" data-hs-target-height="188" data-hs-unfold-content="" data-hs-unfold-content-animation-in="slideInUp" data-hs-unfold-content-animation-out="fadeOut" style="animation-duration: 300ms;">
+    <div class="dropdown-item-text">
+    <div class="media align-items-center">
+    <div class="avatar avatar-sm avatar-circle mr-2">
+    <img class="avatar-img" onerror="this.src='https://grofresh-admin.6amtech.com/public/assets/admin/img/160x160/img1.jpg'" src="https://grofresh-admin.6amtech.com/storage/app/public/admin/2023-10-21-65335c1bd07bd.png" alt="Admin">
+    </div>
+    <div class="media-body">
+    <span class="card-title h5">Jhon</span>
+    <span class="card-text">a**********@admin.com</span>
+    </div>
+    </div>
+    </div>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="https://grofresh-admin.6amtech.com/admin/settings">
+    <span class="text-truncate pr-2" title="Settings">Settings</span>
+    </a>
+    <div class="dropdown-divider"></div>
+    <a class="dropdown-item" href="javascript:" onclick="Swal.fire({
+                                        title: 'Do you want to logout ',
+                                        showDenyButton: true,
+                                        showCancelButton: true,
+                                        confirmButtonColor: '#01684b',
+                                        cancelButtonColor: '#363636',
+                                        confirmButtonText: 'Yes',
+                                        cancelButtonText: 'No',
+                                        }).then((result) => {
+                                        if (result.value) {
+                                        location.href='https://grofresh-admin.6amtech.com/admin/auth/logout';
+                                        } else{
+                                            Swal.fire({
+                                            title: 'Canceled',
+                                            confirmButtonText: 'Okay',
+                                            })
+                                        }
+    
+                                        })">
+    <span class="text-truncate pr-2" title="Sign out">Sign out</span>
+    </a>
+    </div>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </header>
+    
+    <aside class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered default navbar-vertical-aside-initialized">
+    <div class="navbar-vertical-container text-capitalize">
+    <div class="navbar-vertical-footer-offset">
+    <div class="navbar-brand-wrapper justify-content-between">
+    <a class="navbar-brand" href="https://grofresh-admin.6amtech.com/admin" aria-label="Front">
+    <img class="w-100 side-logo" src="https://grofresh-admin.6amtech.com/storage/app/public/restaurant/2023-11-21-655c755267e93.png" alt="Logo">
+    </a>
+    <button type="button" class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-toggle btn btn-icon btn-xs btn-ghost-dark">
+    <i class="tio-clear tio-lg"></i>
+    </button>
+    <div class="navbar-nav-wrap-content-left d-none d-xl-block">
+    <button type="button" class="js-navbar-vertical-aside-toggle-invoker close">
+    <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip" data-placement="right" title="" data-original-title="Collapse"></i>
+    <i class="tio-last-page navbar-vertical-aside-toggle-full-align"></i>
+    </button>
+    </div>
+    </div>
+    <div class="navbar-vertical-content" id="navbar-vertical-content">
+    <form class="sidebar--search-form">
+    <div class="search--form-group">
+    <button type="button" class="btn"><i class="tio-search"></i></button>
+    <input type="text" class="form-control form--control" placeholder="Search Menu..." id="search-sidebar-menu">
+    </div>
+    </form>
+    <ul class="navbar-nav navbar-nav-lg nav-tabs">
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin" title="Dashboard">
+    <i class="tio-home-vs-1-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Dashboard
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="POS">
+    <i class="tio-shopping nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">POS</span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/pos" title="New Sale">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">New Sale</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/pos/orders" title="Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate sidebar--badge-container">
+    <span>Orders</span>
+    <span class="badge badge-soft-info badge-pill ml-1">
+    16
+    </span>
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle">Order management</small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/verify-offline-payment/pending" title="Verify Offline Payment">
+    <i class="tio-shopping-basket nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Verify Offline Payment
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Orders">
+    <i class="tio-shopping-cart nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Orders
+    </span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/orders/list/all" title="All Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate sidebar--badge-container">
+    <span>All</span>
+    <span class="badge badge-info badge-pill ml-1">
+    81
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/pending" title="Pending Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate sidebar--badge-container">
+    <span>Pending</span>
+    <span class="badge badge-soft-info badge-pill ml-1">
+    24
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/confirmed" title="Confirmed Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate sidebar--badge-container">
+    <span>Confirmed</span>
+    <span class="badge badge-soft-success badge-pill ml-1">
+    15
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/processing" title="Processing Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate  sidebar--badge-container">
+    <span>Packaging</span>
+    <span class="badge badge-soft-warning badge-pill ml-1">
+    4
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/out_for_delivery" title="Out for delivery Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate  sidebar--badge-container">
+    <span>Out for delivery</span>
+    <span class="badge badge-soft-warning badge-pill ml-1">
+    2
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/delivered" title="Delivered Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate  sidebar--badge-container">
+    <span>Delivered</span>
+    <span class="badge badge-soft-success badge-pill ml-1">
+    24
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/returned" title="Returned Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate  sidebar--badge-container">
+    <span>Returned</span>
+    <span class="badge badge-soft-danger badge-pill ml-1">
+    1
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/failed" title="Failed Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate  sidebar--badge-container">
+    <span>Failed</span>
+    <span class="badge badge-soft-danger badge-pill ml-1">
+    2
+    </span>
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/orders/list/canceled" title="Canceled Orders">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate  sidebar--badge-container">
+    <span>Canceled</span>
+    <span class="badge badge-soft-light badge-pill ml-1">
+    9
+    </span>
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle">Product management </small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Category setup">
+    <i class="tio-category nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Category setup</span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/category/add" title="Categories">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Categories</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/category/add-sub-category" title="Sub Categories">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Sub Categories</span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Product setup">
+    <i class="tio-premium-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Product setup</span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/attribute/add-new" title="Product attribute">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Product attribute</span>
+    </a>
+    </li>
+    <li class="nav-item  ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/product/list" title="List">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Product list</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/product/bulk-import" title="Bulk import">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Bulk import</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/product/bulk-export-index" title="Bulk export">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Bulk export</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/product/limited-stock" title="Limited Stocks">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Limited Stocks</span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle">Promotion management </small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/banner/add-new" title="Banner">
+    <i class="tio-image nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Banner</span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/coupon/add-new" title="Coupons">
+    <i class="tio-gift nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Coupons</span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/notification/add-new" title="Send notifications">
+    <i class="tio-notifications nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Send Notifications
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/offer/flash-index" title="Flash sale">
+    <i class="tio-alarm-alert nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Flash sale
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/discount/add-new" title="Category discount">
+    <i class="tio-layers-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Category discount</span>
+    </a>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle" title="Layouts">Help &amp; Support Section</small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/message/list" title="Messages">
+    <i class="tio-messages nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Messages
+    </span>
+    </a>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle" title="Documentation">Report and analytics</small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/report/sale-report" title="Sale Report">
+    <span class="tio-chart-bar-1 nav-icon"></span>
+    <span class="text-truncate">Sales Report</span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/report/order" title="Order Report">
+    <span class="tio-chart-bar-2 nav-icon"></span>
+    <span class="text-truncate">Order Report</span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/report/earning" title="Earning Report">
+    <span class="tio-chart-pie-1 nav-icon"></span>
+    <span class="text-truncate">Earning Report</span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/report/expense" title="Expense Report">
+    <span class="tio-chart-bar-4 nav-icon"></span>
+    <span class="text-truncate">Expense Report</span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Analytics">
+    <i class="tio-chart-donut-2 nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Analytics</span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/analytics/keyword-search?date_range=today&amp;date_range_2=today" title="Keyword-search">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Keyword Search</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/analytics/customer-search?date_range=today&amp;date_range_2=today" title="Customer-search">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Customer search</span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle" title="Documentation">User management</small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu active">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/customer/list" title="Customer List">
+    <i class="tio-poi-user nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Customer List
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Customer Wallet">
+    <i class="tio-wallet-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Customer Wallet
+    </span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/customer/wallet/add-fund" title="Add fund">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Add fund
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/customer/wallet/report" title="Report">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Report
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/customer/wallet/bonus/index" title="Wallet bonus setup">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Wallet bonus setup
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Customer Loyalty Point">
+    <i class="tio-medal nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Customer Loyalty Point
+    </span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/customer/loyalty-point/report" title="Report">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Report
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/reviews/list" title="Product Reviews">
+    <i class="tio-star nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Product Reviews
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/customer/subscribed-emails" title="Subscribed Emails">
+    <i class="tio-email-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Subscribed Emails
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Deliveryman">
+    <i class="tio-user nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Deliveryman
+    </span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/delivery-man/list" title="List">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Delivery Man List
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/delivery-man/add" title="Register">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Add New Delivery Man
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/delivery-man/pending/list" title="Joining request">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    New Joining Request
+    </span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/delivery-man/reviews/list" title="Reviews">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Delivery Man Reviews
+    </span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu   ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Employees">
+    <i class="tio-incognito nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Employees
+    </span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/custom-role/create" title="Employee Role Setup">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Employee Role Setup</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/employee/list" title="List">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Employee List</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/employee/add-new" title="Add new">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Add New Employee</span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle" title="Layouts">System setting</small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/business-settings/store/ecom-setup" title="Business Setup">
+    <i class="tio-settings nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    Business Setup
+    </span>
+    </a>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Branch Setup">
+    <i class="tio-shop nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Branch Setup</span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/branch/add-new" title="Add New">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Add New</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/branch/list" title="List">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">List</span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Branch Setup">
+    <i class="tio-website nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">3rd Party</span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none">
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/business-settings/web-app/payment-method" title="3rd party configuration">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">3rd party configuration</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/business-settings/web-app/third-party/fcm-index" title="Push Notification">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Push Notification</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/business-settings/web-app/third-party/offline-payment/list" title="Offline Payment">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Offline Payment</span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:" title="Pages &amp; Media">
+    <i class="tio-pages-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Pages &amp; Media</span>
+    </a>
+    <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display:  ">
+    <li class="nav-item mt-0 ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/business-settings/page-setup/about-us" title="Page Setup">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Page Setup</span>
+    </a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link " href="https://grofresh-admin.6amtech.com/admin/business-settings/web-app/third-party/social-media" title="Social Media">
+    <span class="tio-circle nav-indicator-icon"></span>
+    <span class="text-truncate">Social Media</span>
+    </a>
+    </li>
+    </ul>
+    </li>
+    <li class="nav-item mt-0
+                                    ">
+    <a class="nav-link" href="https://grofresh-admin.6amtech.com/admin/business-settings/web-app/system-setup/language" title="system settings">
+    <i class="tio-security-on-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">System setup</span>
+    </a>
+    </li>
+    <li class="nav-item">
+    <small class="nav-subtitle">System Addon</small>
+    <small class="tio-more-horizontal nav-subtitle-replacer"></small>
+    </li>
+    <li class="navbar-vertical-aside-has-menu ">
+    <a class="js-navbar-vertical-aside-menu-link nav-link" href="https://grofresh-admin.6amtech.com/admin/system-addon" title="System Addons">
+    <i class="tio-add-circle-outlined nav-icon"></i>
+    <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">
+    System Addons
+    </span>
+    </a>
+    </li>
+    <li class="nav-item">
+    <div class="nav-divider"></div>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </aside><div class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-mobile-overlay"></div>
+    
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+    <div class="d-none" id="loading">
+    <div class="loader-image">
+    <img width="200" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/loader.gif">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    
+    
+    
+    <main id="content" role="main" class="main pointer-event">
+    <div class="content container-fluid">
+    <div class="page-header">
+    <h1 class="page-header-title">
+    <span class="page-header-icon">
+    <img src="https://grofresh-admin.6amtech.com/public/assets/admin/img/employee.png" class="w--20" alt="Customer">
+    </span>
+    <span>
+    Customers list <span class="badge badge-soft-primary ml-2 badge-pill">13</span>
+    </span>
+    </h1>
+    </div>
+    <div class="card">
+    <div class="card-header">
+    <div class="card--header">
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/list" method="GET">
+    <div class="input-group">
+    <input id="datatableSearch_" type="search" name="search" class="form-control" placeholder="Search by Name or Phone or Email" aria-label="Search" value="" required="" autocomplete="off">
+    <div class="input-group-append">
+    <button type="submit" class="input-group-text">
+    Search
+    </button>
+    </div>
+    </div>
+    </form>
+    <div class="hs-unfold ml-auto">
+    <a class="js-hs-unfold-invoker btn btn-sm btn-outline-primary-2 dropdown-toggle min-height-40" href="javascript:;" data-hs-unfold-options="{
+                                &quot;target&quot;: &quot;#usersExportDropdown&quot;,
+                                &quot;type&quot;: &quot;css-animation&quot;
+                                }" data-hs-unfold-target="#usersExportDropdown" data-hs-unfold-invoker="">
+    <i class="tio-download-to mr-1"></i> Export
+    </a>
+    <div id="usersExportDropdown" class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-sm-right hs-unfold-hidden hs-unfold-content-initialized hs-unfold-css-animation animated" data-hs-target-height="98.7125" data-hs-unfold-content="" data-hs-unfold-content-animation-in="slideInUp" data-hs-unfold-content-animation-out="fadeOut" style="animation-duration: 300ms;">
+    <span class="dropdown-header">Download
+    Options</span>
+    <a id="export-excel" class="dropdown-item" href="https://grofresh-admin.6amtech.com/admin/customer/export">
+    <img class="avatar avatar-xss avatar-4by3 mr-2" src="https://grofresh-admin.6amtech.com/public/assets/admin/svg/components/excel.svg" alt="Excel">
+    Excel
+    </a>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="table-responsive datatable-custom">
+    <table class="table table-borderless table-hover table-align-middle m-0 text-14px">
+    <thead class="thead-light">
+    <tr class="word-nobreak">
+    <th>
+    SL
+    </th>
+    <th class="table-column-pl-0">Customer name</th>
+    <th>Contact info</th>
+    <th class="text-center">Total Orders</th>
+    <th class="text-center">Total Order Amount</th>
+    <th class="text-center">Status</th>
+    <th class="text-center">Action</th>
+    </tr>
+    </thead>
+    <tbody id="set-rows">
+    <tr>
+    <td>
+    1
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/24" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/160x160/2.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Ikram Ullah
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:ikramullah16@gmail.com">i**********@gmail.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+923157227979">+9**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/24">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    0
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    0.00$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox24" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/24/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/24">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-24" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/24" method="post" id="customer-24">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    2
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/23" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/public/assets/admin/img/160x160/2.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Anika Tahosin
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:anika@gmail.com">a**********@gmail.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+8801700112233">+8**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/23">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    6
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    4,216.10$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox23" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/23/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/23">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-23" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/23" method="post" id="customer-23">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    3
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/20" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec377229988.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Jane Cooper
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:Jane.cooper@example.com">J**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+79039410227">+7**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/20">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    3
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    5,476.32$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox20" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/20/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/20">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-20" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/20" method="post" id="customer-20">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    4
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/19" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec362c95756.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    John Doe
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:customer@gmail.com">c**********@gmail.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+880170000000">+8**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/19">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    33
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    84,191.15$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox19" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/19/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/19">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-19" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/19" method="post" id="customer-19">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    5
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/16" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec37fe0d5ff.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Guy Hawkins
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:hawkins@example.com">h**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+79038403153">+7**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/16">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    1
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    675.83$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox16" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/16/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/16">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-16" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/16" method="post" id="customer-16">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    6
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/15" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec38511c57f.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Ronald Richards
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:ronald@example.com">r**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+79038809338">+7**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/15">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    2
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    1,491.69$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox15" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/15/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/15">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-15" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/15" method="post" id="customer-15">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    7
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/13" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec38d3741f2.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Marvin McKinney
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:marvin@example.com">m**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+33655565633">+3**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/13">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    12
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    10,190.14$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox13" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/13/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/13">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-13" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/13" method="post" id="customer-13">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    8
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/12" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec39689dea5.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Brooklyn Simmons
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:brooklyn@example.com">b**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+56955573814">+5**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/12">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    2
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    1,505.41$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox12" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/12/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/12">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-12" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/12" method="post" id="customer-12">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    9
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/9" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec3cbe34688.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Eleanor Pena
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:eleanor@example.com">e**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+74455568337">+7**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/9">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    5
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    14,254.54$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox9" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/9/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/9">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-9" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/9" method="post" id="customer-9">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    10
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/8" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec3ae119494.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Esther Howard
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:esther@example.com">e**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+522348956964">+5**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/8">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    4
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    1,351.55$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox8" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/8/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/8">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-8" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/8" method="post" id="customer-8">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    11
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/6" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec3a42e6232.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Robert Fox
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:robert@example.com">r**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+94722533345">+9**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/6">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    8
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    3,363.85$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox6" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/6/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/6">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-6" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/6" method="post" id="customer-6">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    12
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/5" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec39ca742b0.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Annette Black
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:annette@example.com">a**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+31655548871">+3**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/5">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    6
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    2,322.15$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox5" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/5/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/5">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-5" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/5" method="post" id="customer-5">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    <tr>
+    <td>
+    13
+    </td>
+    <td class="table-column-pl-0">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/4" class="product-list-media">
+    <img class="rounded-full" src="https://grofresh-admin.6amtech.com/storage/app/public/profile/2024-03-09-65ec36e8a5b2c.png" alt="Customer">
+    <div class="table--media-body">
+    <h5 class="title m-0">
+    Jane Doe
+    </h5>
+    </div>
+    </a>
+    </td>
+    <td>
+    <h5 class="m-0">
+    <a href="mailto:jane@example.com">j**********@example.com</a>
+    </h5>
+    <div>
+    <a href="Tel:+880160000000">+8**********</a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    <a href="https://grofresh-admin.6amtech.com/admin/customer/view/4">
+    <span class="badge badge-soft-info py-2 px-3 font-medium">
+    2
+    </span>
+    </a>
+    </div>
+    </td>
+    <td>
+    <div class="text-center">
+    830.40$
+    </div>
+    </td>
+    <td>
+    <label class="toggle-switch my-0">
+    <input type="checkbox" class="toggle-switch-input status-change-alert" id="stocksCheckbox4" data-route="https://grofresh-admin.6amtech.com/admin/customer/status/4/1" data-message="You want to change the status for this customer" checked="">
+    <span class="toggle-switch-label mx-auto text">
+    <span class="toggle-switch-indicator"></span>
+    </span>
+    </label>
+    </td>
+    <td>
+    <div class="btn--container justify-content-center">
+    <a class="action-btn" href="https://grofresh-admin.6amtech.com/admin/customer/view/4">
+    <i class="tio-invisible"></i>
+    </a>
+    <a class="action-btn btn--danger btn-outline-danger form-alert" href="javascript:" data-id="customer-4" data-message="Want to remove this customer?">
+    <i class="tio-delete-outlined"></i>
+    </a>
+    <form action="https://grofresh-admin.6amtech.com/admin/customer/delete/4" method="post" id="customer-4">
+    <input type="hidden" name="_token" value="yGiu5UWn1DewCVcuzhpNTeqMdWX8iXmzpt6RvU3T" autocomplete="off"> <input type="hidden" name="_method" value="delete"> </form>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <div class="card-footer">
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+    <div class="row justify-content-between align-items-center">
+    <div class="col">
+    <p class="font-size-sm mb-0">
+    <span class="d-none d-sm-inline-block">Copyright © 2023, groFresh</span>
+    </p>
+    </div>
+    <div class="col-auto">
+    <div class="d-flex justify-content-end">
+    <ul class="list-inline list-separator">
+    <li class="list-inline-item">
+    <a class="list-separator-link" href="https://grofresh-admin.6amtech.com/admin/business-settings/store/ecom-setup">Store Settings</a>
+    </li>
+    <li class="list-inline-item">
+    <a class="list-separator-link" href="https://grofresh-admin.6amtech.com/admin/settings">Profile</a>
+    </li>
+    <li class="list-inline-item">
+    <div class="hs-unfold">
+    <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle" href="https://grofresh-admin.6amtech.com/admin" data-hs-unfold-invoker="">
+    <i class="tio-home-outlined"></i>
+    </a>
+    </div>
+    </li>
+    <li class="list-inline-item">
+    <label class="badge badge-success text-capitalize">
+    Software Version 7.5
+    </label>
+    </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="modal fade" id="popup-modal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="modal-body">
+    <div class="row">
+    <div class="col-12">
+    <div class="text-center">
+    <h2 class="order-check-colour">
+    <i class="tio-shopping-cart-outlined"></i> You have new order Check Please.
+    </h2>
+    <hr>
+    <button id="check-order" class="btn btn-primary">Ok let me check</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </main>
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/js/custom.js"></script>
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/js/vendor.min.js"></script>
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/js/theme.min.js"></script>
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/js/sweet_alert.js"></script>
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/js/toastr.js"></script>
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/js/owl.min.js"></script>
+    <script src="https://grofresh-admin.6amtech.com/public/assets/admin/js/firebase.min.js"></script>
+    <script type="text/javascript"></script>
+    <script>
+        $(document).on('ready', function () {
+            var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+    
+            $('.js-nav-tooltip-link').tooltip({boundary: 'window'})
+    
+            $(".js-nav-tooltip-link").on("show.bs.tooltip", function (e) {
+                if (!$("body").hasClass("navbar-vertical-aside-mini-mode")) {
+                    return false;
+                }
+            });
+    
+            $('.js-hs-unfold-invoker').each(function () {
+                var unfold = new HSUnfold($(this)).init();
+            });
+    
+            $('.js-form-search').each(function () {
+                new HSFormSearch($(this)).init()
+            });
+    
+            $('.js-select2-custom').each(function () {
+                var select2 = $.HSCore.components.HSSelect2.init($(this));
+            });
+    
+            $('.js-daterangepicker').daterangepicker();
+    
+            $('.js-daterangepicker-times').daterangepicker({
+                timePicker: true,
+                startDate: moment().startOf('hour'),
+                endDate: moment().startOf('hour').add(32, 'hour'),
+                locale: {
+                    format: 'M/DD hh:mm A'
+                }
+            });
+        });
+    </script>
+    <script>
+            $(window).on('load', function () {
+                if ($(".navbar-vertical-content li.active").length) {
+                    $('.navbar-vertical-content').animate({
+                        scrollTop: $(".navbar-vertical-content li.active").offset().top - 150
+                    }, 10);
+                }
+            });
+    
+            var $rows = $('#navbar-vertical-content .navbar-nav > li');
+            $('#search-sidebar-menu').keyup(function () {
+                var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+    
+                $rows.show().filter(function () {
+                    var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+                    return !~text.indexOf(val);
+                }).hide();
+            });
+        </script>
+    <audio id="myAudio">
+    <source src="https://grofresh-admin.6amtech.com/public/assets/admin/sound/notification.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        var audio = document.getElementById("myAudio");
+    
+        function playAudio() {
+            audio.play();
+        }
+    
+        function pauseAudio() {
+            audio.pause();
+        }
+    </script>
+    <script>
+        $('#check-order').on('click', function(){
+            location.href = 'https://grofresh-admin.6amtech.com/admin/order/list/all';
+        })
+    
+        function route_alert(route, message) {
+            Swal.fire({
+                title: 'Are you sure ',
+                text: message,
+                type: 'warning',
+                showCancelButton: true,
+                cancelButtonColor: 'default',
+                confirmButtonColor: '#01684b',
+                cancelButtonText: 'No',
+                confirmButtonText: 'Yes',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.value) {
+                    location.href = route;
+                }
+            })
+        }
+    
+        $('.form-alert').on('click', function (){
+            let id = $(this).data('id');
+            let message = $(this).data('message');
+            form_alert(id, message)
+        });
+    
+        function form_alert(id, message) {
+            Swal.fire({
+                title: 'Are you sure ',
+                text: message,
+                type: 'warning',
+                showCancelButton: true,
+                cancelButtonColor: 'default',
+                confirmButtonColor: '#01684b',
+                cancelButtonText: 'No',
+                confirmButtonText: 'Yes',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.value) {
+                    $('#'+id).submit()
+                }
+            })
+        }
+    
+        function call_demo(){
+            toastr.info('Disabled for demo version!')
+        }
+    
+        $('.call-demo').click(function() {
+            if ('demo' === 'demo') {
+                call_demo();
+            }
+        });
+    </script>
+    <script>
+    
+        $('.status-change-alert').on('click', function (){
+            let url = $(this).data('route');
+            let message = $(this).data('message');
+            status_change_alert(url, message, event)
+        });
+    
+        function status_change_alert(url, message, e) {
+            e.preventDefault();
+            Swal.fire({
+                title: 'Are you sure ',
+                text: message,
+                type: 'warning',
+                showCancelButton: true,
+                cancelButtonColor: 'default',
+                confirmButtonColor: '#107980',
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'No',
+                reverseButtons: true
+            }).then((result) => {
+                if (result.value) {
+                    location.href = url;
+                }
+            })
+        }
+    </script>
+    <script>
+        var initialImages = [];
+        $(window).on('load', function() {
+            $("form").find('img').each(function (index, value) {
+                initialImages.push(value.src);
+            })
+        })
+    
+        $(document).ready(function() {
+            $('form').on('reset', function(e) {
+                $("form").find('img').each(function (index, value) {
+                    $(value).attr('src', initialImages[index]);
+                })
+            });
+        });
+    </script>
+    <script>
+        $(function(){
+            var owl = $('.single-item-slider');
+            owl.owlCarousel({
+                autoplay: false,
+                items:1,
+                onInitialized  : counter,
+                onTranslated : counter,
+                autoHeight: true,
+                dots: true,
+            });
+    
+            function counter(event) {
+                var element   = event.target;         // DOM element, in this example .owl-carousel
+                var items     = event.item.count;     // Number of items
+                var item      = event.item.index + 1;     // Position of the current item
+    
+                if(item > items) {
+                    item = item - items
+                }
+                $('.slide-counter').html(+item+"/"+items)
+            }
+        });
+    </script>
+    <script>
+            
+        
+            setInterval(function () {
+            $.get({
+                url: 'https://grofresh-admin.6amtech.com/admin/get-restaurant-data',
+                dataType: 'json',
+                success: function (response) {
+                    let data = response.data;
+                    new_order_type = data.type;
+                    if (data.new_order > 0) {
+                        playAudio();
+                        $('#popup-modal').appendTo("body").modal('show');
+                    }
+                },
+            });
+        }, 10000);
+        
+            
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            replaceEmailsAndPhoneNumbersWithAsterisks(document.getElementById('demo'));
+    
+            // Disable mailto links
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                });
+            });
+            // Disable tel links
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+                });
+            });
+        });
+    
+        function replaceEmailsAndPhoneNumbersWithAsterisks(element) {
+            if (element.nodeType === 3) { // Text node
+                // Use regular expressions to match email and phone number patterns
+                element.nodeValue = element.nodeValue
+                    .replace(/\b([A-Za-z0-9._%+-])[^@]*@([A-Za-z0-9.-]+)\.([A-Z|a-z]{2,})\b/g, function (match, firstLetter, domain, tld) {
+                        var remainingAsterisks = '*'.repeat(Math.min(10, match.length - 1));
+                        return firstLetter + remainingAsterisks + '@' + domain + '.' + tld;
+                    })
+                    .replace(/\b(?:\+\d{1,3}\s?)?\d{1,4}[-.\s]?\d{5,}\b/g, function (match) {
+                        if (match.length >= 8) {
+                            var firstChar = match.charAt(0) === '+' ? '+' : match.charAt(0);
+                            var remainingAsterisks = '*'.repeat(Math.min(10, match.length - (firstChar === '+' ? 2 : 1)));
+                            return firstChar + remainingAsterisks;
+                        } else {
+                            return match;  // Don't replace if the length is less than 10
+                        }
+                    });
+            } else if (element.nodeType === 1) { // Element node
+                for (var i = 0; i < element.childNodes.length; i++) {
+                    replaceEmailsAndPhoneNumbersWithAsterisks(element.childNodes[i]);
+                }
+            }
+        }
+    </script>
+    
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="https://grofresh-admin.6amtech.com/public/assets/admin/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    </script>
+    
+    
+    </body></html>
